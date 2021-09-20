@@ -12,10 +12,16 @@ public class MathEx {
         return swapped;
     }
 
-//    public static void timeLeft(int currHour, int currMin, int depHour, int depMin)
-//    {
-//        //PRINT the time left here in hours and minutes
-//    }
+    public static void timeLeft(int currHour, int currMin, int depHour, int depMin)
+    {
+       int fullhr= currHour*60;
+       int fullmin=currMin+fullhr;
+       int depfull=depHour*60+depMin;
+       int timediff= depfull-fullmin;
+       int diffhr= timediff
+
+        //PRINT the time left here in hours and minutes
+    }
 //    public static int dayOfWeek(int daysOfWeek1, int day)
 //    {
 //
@@ -34,10 +40,10 @@ public class MathEx {
         input = 381;
         output = digitSwapper(input);
         System.out.println(input + " " + output);
-//
-//        timeLeft(1, 34, 8, 20);
-//        timeLeft(1, 15, 4, 36);
-//
+
+        timeLeft(1, 34, 8, 20);
+        timeLeft(1, 15, 4, 36);
+
 //        System.out.println(dayOfWeek(0, 1));
 //        System.out.println(dayOfWeek(0, 14));
 //        System.out.println(dayOfWeek(6, 22));
